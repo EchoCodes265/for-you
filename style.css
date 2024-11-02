@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #1a1a1d; /* Dark, subtle background */
+    font-family: 'Arial', sans-serif;
+    color: #f2f2f2; /* Light text for contrast */
+    padding: 20px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    max-width: 900px;
+    width: 100%;
+    background-color: rgba(255, 192, 203, 0.15); /* Soft pink overlay */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+  }
+  
+  .left-section {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .right-section {
+    flex: 1;
+    padding: 20px;
+    max-height: 400px;
+    overflow-y: auto; /* Allows scrolling if lyrics are too long */
+  }
+  
+  h1 {
+    font-size: 2em;
+    color: #ffb6c1; /* Soft pink title */
+    margin-bottom: 15px;
+  }
+  
+  p {
+    font-size: 1em;
+    color: #e0e0e0;
+    margin-bottom: 15px;
+  }
+  
+  #playButton {
+    background-color: #e84545; /* Soft red for Valentine's vibe */
+    color: #f2f2f2;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #playButton:hover {
+    background-color: #ff6363; /* Lighter red on hover */
+  }
+  
+  .lyrics {
+    font-size: 0.9em;
+    line-height: 1.6;
+    color: #d3d3d3;
+  }
+  
+  .lyrics h2 {
+    font-size: 1.3em;
+    color: #ffb6c1;
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .left-section, .right-section {
+      padding: 10px;
+      max-width: 100%;
+    }
+  }
+  
